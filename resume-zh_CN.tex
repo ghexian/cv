@@ -1,4 +1,4 @@
-% !TEX TS-program = xelatex
+ % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8 Unicode
 % !Mode:: "TeX:UTF-8"
 
@@ -30,7 +30,7 @@
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
   \item 熟悉Unity、git
-  \item 熟悉c/cpp/csharp/lua/python
+  \item 熟悉c/cpp/csharp/lua
   \item 扎实的计算机基础知识
   \item 良好的自驱力，快速学习力
   \item 良好的英文文献阅读力
@@ -39,21 +39,23 @@
 % \end{itemize}
 
 \section{工作经历}
-\datedsubsection{\textbf{字节跳动}, Unity客户端}{2018.7-至今}
+\datedsubsection{\textbf{字节跳动}, Unity客户端}{2018.7-2020.4}
 \begin{itemize}
 %   \item 飞猪北京前端团队全面负责各交通线的票务(机票/火车票/汽车票) web 应用与事业群基础架构研发
-  \item 重构热更新系统。原热更新系统代码偏面向过程，代码重复度高，不便维护。以面向对象方式重构后，减少了代码冗余性，代码结构更清晰。扩展断点续传、zip解压功能。
-  \item 重构游戏状态机系统，使用状态模式重构该系统，拆分各个状态到各自的状态类中，相互之间无耦合关系，使结构更加清晰，状态职责更明确，系统可维护性、可扩展性更好。
-  \item 重构Lua层UI框架，以系统为单位，统一管理系统内的窗口文件、数据文件，并且引入观察者模式，解耦数据更新与界面显示，使得客户端系统文件结构清晰，代码更加灵活，扩展性更好。
+  \item 扩展热更新系统，增加断点续传、zip解压功能。
+  \item 重构游戏状态机系统，使用状态模式重构该系统，拆分各个状态到各自的状态类中。
+  \item 重构Lua层UI框架，以系统为单位，统一管理系统内的窗口文件、数据文件，且引入观察者模式，解耦数据更新与界面显示。
   \item 编辑器扩展，UI窗口生成工具。
+  \item 开发维护UI插件，定制化slider。
   \item 重构资源管理器。原资源管理器接口定义不清晰，代码结构乱，asset与assetbundle管理不清晰。重构后，资源管理器对外明确接口定义，统一外部资源调用，内部区分asset与assetbundle管理，使系统对资源的管理更加清晰。
   \item 处理刘海屏适配问题。设计方案适配刘海机型。在刘海机型上，默认开启刘海，针对android o系统，通过白名单获取刘海尺寸，针对android p使用原生android代码获得刘海尺寸。Unity2018已加入支持。
   \item 优化原配置存储系统。通过在csharp代码中模拟lua的table、value、string结构，直接读取lua内存的方式实现csharp与lua的静态数据共享，降低mono消耗。
   \item python实现的xls转lua工具，附带校验规则。
-  \item 重构编队系统代码结构，通过参数定制、消息响应与回调绑定，将编队系统进行抽象，显示与数据分离，抽离系统特殊逻辑，简化编队系统。
+  \item 开发维护编队系统代码，通过参数定制、消息响应与回调绑定，方便其他系统接入。
   \item 开发维护客户端红点系统。通过将红点系统抽象成一棵多叉树的形式，把每一个红点作为一个树节点，外部系统红点是子系统红点父节点，子节点红点计数计入父节点红点计数。
   \item 开发维护部分pvp、pve系统。
   \item 开发维护战斗镜头系统，可以支持自定义语言的镜头控制，具有状态切换，条件判断等特点。
+  \item 客户端性能优化，profiler，uwa等。
   \item 解决ios、android打包中遇见的问题。
   \item 对接协议加密sdk。
   \item 升级wwise，解决wwise热更。
@@ -69,7 +71,6 @@
 \begin{itemize}[parsep=0.2ex]
   \item 喜欢刷算法 leetcode
   \item 热爱 console game 以及 csgo
-  \item 习惯阅读金融刊物、栏目
   \item 追求 work life balance
 \end{itemize}
 
