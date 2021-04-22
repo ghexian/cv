@@ -49,7 +49,7 @@
   \item 编辑器扩展，UI窗口生成工具。
   \item 开发维护UI插件，定制化slider。
   \item 重构资源管理器。原资源管理器接口定义不清晰，代码结构乱，asset与assetbundle管理不清晰。重构后，资源管理器对外明确接口定义，统一外部资源调用，内部区分asset与assetbundle管理，使系统对资源的管理更加清晰。
-  \item 处理刘海屏适配问题。设计方案适配刘海机型。在刘海机型上，默认开启刘海，针对android o系统，通过白名单获取刘海尺寸，针对android p使用原生android代码获得刘海尺寸。Unity2018已加入支持。
+  \item 处理刘海屏适配问题。设计方案适配刘海机型。
   \item 优化原配置存储系统。通过在csharp代码中模拟lua的table、value、string结构，直接读取lua内存的方式实现csharp与lua的静态数据共享，降低mono消耗。
   \item python实现的xls转lua工具，附带校验规则。
   \item 开发维护编队系统代码，通过参数定制、消息响应与回调绑定，方便其他系统接入。
