@@ -40,27 +40,27 @@
 % \end{itemize}
 
 \section{工作经历}
-\datedsubsection{\textbf{腾讯（上海）}, 天美z1工作室内容一组}{2021.5-至今}
+\datedsubsection{\textbf{腾讯（上海）}, 天美z1工作室爆笑向前冲项目组}{2021.5-至今}
 \begin{itemize}
   \item 项目Lua框架搭建
   \item 基于umg、unlua实现的UI系统
   \item 基于ECA实现的Gameplay框架
-  \item 实现multiplayer相关的玩法逻辑
-  \item 接入ds管理sdk
+  \item 实现多人游戏的关卡切换、ds生命周期管理
+  \item 接入ds管理sdk，方便服务器拉起停止，监视ds健康状态
+  \item 实现部分模拟物理相关的物体，自定义人物移动管理
+  \item 客户端日志上传工具
+  \item 
 \end{itemize}
 \datedsubsection{\textbf{字节跳动（上海）}, 朝夕光年101工作室全明星激斗项目组}{2018.7-2021.4}
 \begin{itemize}
-  \item 重构Lua层UI框架，以系统为单位，统一管理系统内的窗口文件、数据文件，且引入观察者模式，解耦数据更新与界面显示。
+  \item 重构Lua层UI框架。
   \item 编辑器扩展，UI窗口生成工具。
   \item 开发维护UI插件，定制化slider。
-  \item 重构资源管理器。原资源管理器接口定义不清晰，代码结构乱，asset与assetbundle管理不清晰。重构后，资源管理器对外明确接口定义，统一外部资源调用，内部区分asset与assetbundle管理，使系统对资源的管理更加清晰。
-  \item 优化原配置存储系统。通过在csharp代码中模拟lua的table、value、string结构，直接读取lua内存的方式实现csharp与lua的静态数据共享，降低mono消耗。
+  \item 重构资源管理器。
+  \item 利用cpp与lua数据共享优化静态配置。
   \item python实现的xls转lua工具，附带校验规则。
-  \item 开发维护编队系统代码，通过参数定制、消息响应与回调绑定，方便其他系统接入。
-  \item 开发维护客户端红点系统。通过将红点系统抽象成一棵多叉树的形式，把每一个红点作为一个树节点，外部系统红点是子系统红点父节点，子节点红点计数计入父节点红点计数。
-  \item 开发维护部分pvp、pve系统。
+  \item 开发维护编队系统、红点系统、部分pvp、pve系统。
   \item 开发维护战斗镜头系统，可以支持自定义语言的镜头控制，具有状态切换，条件判断等特点。
-  \item 客户端性能优化，profiler，uwa等。
 \end{itemize}
 
 % \begin{onehalfspacing}
